@@ -1,0 +1,23 @@
+.toggle-button {
+    display: flex;
+    flex-direction: column;
+    height: 47px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-top: 12px;
+}
+
+.toggle-button_line {
+    width: 30px;
+    height: 2px;
+    background: white;
+}
+
+.hamburger-icon {
+    color: white;
+    cursor: pointer;
+}

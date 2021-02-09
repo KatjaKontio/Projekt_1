@@ -1,0 +1,36 @@
+.navigationLogotype {
+    width: 100px;
+    padding-left: 200px;
+    cursor: pointer;
+}
+
+.desktopNavigationWrapper {
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.navigationWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.signInButton {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 200px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+}
+
+.profile {
+    padding-right: 200px;
+    padding-left: 50px;
+}

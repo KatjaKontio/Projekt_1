@@ -1,0 +1,34 @@
+.mobilenav-wrapper {
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.mobilenavigationLogotype {
+    padding-left: 20px;
+}
+
+.mobilesignInButton {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    line-height: 60px;
+    padding-right: 30px;
+}
+
+.login-hambuger-wrapper {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobilenav-profile {
+    padding-right: 30px;
+}

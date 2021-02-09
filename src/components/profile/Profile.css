@@ -1,0 +1,22 @@
+.profileImg {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.hoverDropdown:hover .profileDropdown {
+    display: block;
+    background-color: white;
+}
+
+.hoverDropdown {
+    height: 86px;
+    cursor: pointer;
+    text-align: center;
+    display: inline;
+}
+
+.profileUsername {
+  
+    color: white;
+}
+
