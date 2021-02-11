@@ -2,7 +2,7 @@ import './Mobilenavigation.css'
 import { HamburgerButton } from './hamburgerbutton/HamburgerButton'
 import { SideBar } from './sidebar/SideBar'
 import { useState } from 'react'
-import Logotype from '../../../shared/images/logo.png'
+import Logotype from '../../../shared/images/bajs5.png'
 import { BackDrop } from '../../../components/backdrop/BackDrop'
 import { useContext } from 'react'
 import { UserContext } from '../../../shared/provider/UserProvider'
@@ -26,15 +26,15 @@ export const Mobilenavigation = () => {
 
     return (
         <div className='mobilenav-wrapper'>
-            <img className='mobilenavigationLogotype'
-                src={Logotype} alt="Hej" />
-                <div className="login-hambuger-wrapper">
             {displaySignInButtonOrUsernameDependingOnAuth()}
-            <HamburgerButton drawerHandler={setOpenDrawer} />
-            <SideBar drawerIsOpen={openDrawer} drawerHandler={setOpenDrawer} />
-            {!openDrawer || <BackDrop drawerHandler={setOpenDrawer} />}
+        
+                <img className='mobilenavigationLogotype'
+                    src={Logotype} alt="Hej" />
+                <HamburgerButton drawerHandler={setOpenDrawer} />
+                <SideBar drawerIsOpen={openDrawer} drawerHandler={setOpenDrawer} />
+                {!openDrawer || <BackDrop drawerHandler={setOpenDrawer} />}
 
-            </div>
+         
         </div>
     )
 }

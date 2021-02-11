@@ -14,6 +14,7 @@ export const ExercisesComponent = () => {
     const getDataFromStarWarsAPI = async () => {
         try {
             const response = await StarWarsAPIService.getStarWarsCharacter(count)
+            setStarwarsData(response)
         } catch (error) {
             console.log(error)
 

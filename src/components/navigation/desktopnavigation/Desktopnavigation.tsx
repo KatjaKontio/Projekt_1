@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import './Desktopnavigation.css'
-import Logotype from '../../../shared/images/logo.png'
+import Logotype from '../../../shared/images/bajs5.png'
 import { useHistory } from 'react-router-dom'
 import RoutingPath from '../../../routes/RoutingPath'
 import { useContext } from 'react'

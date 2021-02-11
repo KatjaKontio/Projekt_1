@@ -5,8 +5,7 @@
 }
 
 .desktopNavigationWrapper {
-    background-color: #3bb78f;
-    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    background-color: #274f5d;
     font-family: Helvetica, sans-serif;
     display: flex;
     justify-content: space-between;
