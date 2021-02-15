@@ -1,46 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Countdown from "react-countdown";
-
-
-
-// Random component
-const Completionist = () => <span>You are good to go!</span>;
-
-// Renderer callback with condition
-
-const renderer = ({ hours, minutes, seconds, completed }: {
-    hours: any;
-    minutes: any;
-    seconds: any;
-    completed: any;
-}) => {
-    if (completed) {
-        // Render a complete state
-        return <Completionist />;
-    } else {
-        // Render a countdown
-        return (
-            <span>
-                {hours}:{minutes}:{seconds}
-            </span>
-        );
-    }
-};
-
-ReactDOM.render(
-    <Countdown date={Date.now() + 5000} renderer={renderer} />,
-    document.getElementById("root")
-);
-
-
+import React from 'react'
+import { Timercomponent } from './timer/Timercomponent'
 
 export const TimerPage = () => {
-    return (
-        <div id="root">
-            <div>
-                <div>Hej</div>
-            </div>
-        </div>
-    )
+  const expiryTimestamp:any = new Date()
+ 
+  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 2); // 10 minutes timer
+  return (
+    <div>
+      <Timercomponent expiryTimestamp={expiryTimestamp}></Timercomponent>
+    </div>
+  )
 }
