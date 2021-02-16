@@ -1,14 +1,14 @@
 import { useEffect } from 'react'
-import { useTimer } from 'react-timer-hook';
-import { Navigation } from '../../../components/navigation/Navigation';
+import { useTimer } from 'react-timer-hook'
 import './../timer/Timercomponent.css'
+/*import Sound from './../../../shared/sound/sound.wav'*/
 
 
 export const Timercomponent = (props: { expiryTimestamp: any }) => {
   const { expiryTimestamp } = props
+ /*const audio = new Audio (Sound)*/
 
-const vibratePattern = () =>
-navigator.vibrate([300, 100, 300, 100, 300])
+ const x = document.getElementById("")
 
 
   const {
@@ -18,7 +18,11 @@ navigator.vibrate([300, 100, 300, 100, 300])
     start,
     pause,
     restart,
-  } = useTimer({ expiryTimestamp, onExpire: () => navigator.vibrate([300, 100, 300, 100, 300]) });
+  } = useTimer({ expiryTimestamp, onExpire: () => { window.navigator.vibrate([300, 100, 300, 100, 300]);
+   /* audio.play();*/
+} 
+
+});
 
   useEffect(() => {
 
