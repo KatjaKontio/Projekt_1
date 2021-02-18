@@ -1,14 +1,17 @@
 import { useEffect } from 'react'
 import { useTimer } from 'react-timer-hook'
 import './../timer/Timercomponent.css'
-/*import Sound from './../../../shared/sound/sound.wav'*/
 
+const music = require("../../../shared/audio/sound.wav");
 
 export const Timercomponent = (props: { expiryTimestamp: any }) => {
   const { expiryTimestamp } = props
- /*const audio = new Audio (Sound)*/
 
- const x = document.getElementById("")
+ 
+
+
+ const audio = new Audio (music)
+
 
 
   const {
@@ -19,7 +22,7 @@ export const Timercomponent = (props: { expiryTimestamp: any }) => {
     pause,
     restart,
   } = useTimer({ expiryTimestamp, onExpire: () => { window.navigator.vibrate([300, 100, 300, 100, 300]);
-   /* audio.play();*/
+    audio.play();
 } 
 
 });
@@ -43,7 +46,7 @@ export const Timercomponent = (props: { expiryTimestamp: any }) => {
         <button className="buttonTimer" onClick={() => {
           // Restarts to 5 minutes timer
           const time: any = new Date();
-          time.setSeconds(time.getSeconds() + 5);
+          time.setSeconds(time.getSeconds() + 3600);
           restart(time)
         }}>Restart</button>
       </div>

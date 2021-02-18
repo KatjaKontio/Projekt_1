@@ -29,7 +29,7 @@ export const Mobilenavigation = () => {
             {displaySignInButtonOrUsernameDependingOnAuth()}
         
                 <img className='mobilenavigationLogotype'
-                    src={Logotype} alt="Hej" />
+                    src={Logotype} alt="Hej" onClick={() => history.push(RoutingPath.homePage)} />
                 <HamburgerButton drawerHandler={setOpenDrawer} />
                 <SideBar drawerIsOpen={openDrawer} drawerHandler={setOpenDrawer} />
                 {!openDrawer || <BackDrop drawerHandler={setOpenDrawer} />}
