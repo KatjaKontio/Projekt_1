@@ -2,11 +2,12 @@ import { useEffect } from 'react'
 import { useTimer } from 'react-timer-hook'
 import './../timer/Timercomponent.css'
 
+
 const music = require("../../../shared/audio/sound.wav");
 
-export const Timercomponent = (props: { expiryTimestamp: any }) => {
+export const Timercomponent = (props: { expiryTimestamp: any, name: any }) => {
   const { expiryTimestamp } = props
-
+ 
  
 
 
@@ -49,6 +50,10 @@ export const Timercomponent = (props: { expiryTimestamp: any }) => {
           time.setSeconds(time.getSeconds() + 3600);
           restart(time)
         }}>Restart</button>
+
+        <h1>
+          {props.name}
+        </h1>
       </div>
     </div>
   );

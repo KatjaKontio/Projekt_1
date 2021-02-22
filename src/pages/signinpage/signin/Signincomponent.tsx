@@ -11,7 +11,7 @@ export const Signincomponent = () => {
   const [authUser, setAuthUser] = useContext(UserContext)
 
   const x = (event: React.ChangeEvent<HTMLInputElement>, target: keyof loginCredentials) => {
-    setLoginCredentials({...loginCredentials, [target]:event.target.value})
+    setLoginCredentials({ ...loginCredentials, [target]: event.target.value })
   }
 
   const signIn = () => {
@@ -26,11 +26,11 @@ export const Signincomponent = () => {
         <form className="login-form">
 
           < input placeholder='username'
-            onChange={event => x(event,'username')}
+            onChange={event => x(event, 'username')}
           />
 
           <input placeholder='password' type="password"
-            onChange={event => x(event,'password')} />
+            onChange={event => x(event, 'password')} />
 
           <button onClick={() => signIn()}>Sign in</button>
           <p className="message">Not registered? <a href="#">Create an account</a></p>
