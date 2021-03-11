@@ -19,3 +19,5 @@ application.use(Middlewares.errorHandler)
 
 Configuration.connectToDataBase()
 Configuration.connectToPort(application)
+
+export default application

@@ -1,13 +1,13 @@
 {
-  "name": "server",
+  "name": "projekt_1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha 'tests/**'",
     "dev": "nodemon Server.js"
-  },
+   },
   "keywords": [
     "REST_API",
     "Express",
@@ -26,6 +26,9 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "mocha": "^8.3.1",
+    "chai": "^4.3.3",
+    "chai-http": "^4.3.0",
     "eslint": "^7.20.0",
     "nodemon": "^2.0.7"
   }
