@@ -8,12 +8,7 @@ const music = require("../../../shared/audio/sound.wav");
 export const Timercomponent = (props: { expiryTimestamp: any, name: any }) => {
   const { expiryTimestamp } = props
  
- 
-
-
  const audio = new Audio (music)
-
-
 
   const {
     seconds,

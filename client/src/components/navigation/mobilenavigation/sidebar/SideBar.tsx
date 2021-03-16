@@ -1,4 +1,3 @@
-import { NavigationTabs } from '../../navigationtabs/NavigationTabs'
 import './SideBar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
